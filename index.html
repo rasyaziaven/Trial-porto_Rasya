@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Rasya Zia Nawfalry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-300 font-sans selection:bg-neutral-700 selection:text-white">
+
+  <!-- Header / Navigasi -->
+  <header class="bg-neutral-900 border-b border-neutral-800 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#beranda" class="text-base font-bold text-white hover:text-neutral-400 transition-colors">
+        Rasya Zia Nawfalry
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#beranda" class="text-neutral-400 hover:text-white transition-colors">Beranda</a>
+        <a href="#tentang" class="text-neutral-400 hover:text-white transition-colors">Tentang Saya</a>
+        <a href="#proyek" class="text-neutral-400 hover:text-white transition-colors">Proyek</a>
+        <a href="#kontak" class="text-neutral-400 hover:text-white transition-colors">Kontak</a>
+      </nav>
+
+      <button id="menu-btn" class="md:hidden text-neutral-400 hover:text-white p-1" aria-label="Buka menu navigasi">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-t border-neutral-800 px-4 py-3 space-y-2 text-sm">
+      <a href="#beranda" class="block py-1 text-neutral-300 hover:text-white nav-link">Beranda</a>
+      <a href="#tentang" class="block py-1 text-neutral-300 hover:text-white nav-link">Tentang Saya</a>
+      <a href="#proyek" class="block py-1 text-neutral-300 hover:text-white nav-link">Proyek</a>
+      <a href="#kontak" class="block py-1 text-neutral-300 hover:text-white nav-link">Kontak</a>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-20">
+
+    <!-- Beranda -->
+    <div id="beranda" class="text-center pt-4">
+      <div class="inline-block relative mb-6">
+        <img 
+          src="foto-profil.jpeg" 
+          alt="Foto Profil Rasya Zia Nawfalry" 
+          class="w-36 h-36 md:w-40 md:h-40 rounded-full mx-auto object-cover border-2 border-neutral-700 shadow-xl"
+        />
+      </div>
+
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-2">
+        Rasya Zia Nawfalry
+      </h1>
+
+      <p class="text-neutral-400 text-sm md:text-base font-medium mb-4">
+        Software Engineer &amp; Indie Game Developer &bull; S1 Teknik Informatika Universitas Paramadina
+      </p>
+
+      <p class="text-neutral-400 max-w-xl mx-auto text-sm leading-relaxed mb-6">
+        Alumni SMK Teknik Komputer dan Jaringan (TKJ) tahun 2024. Berfokus pada rekayasa logika pemrograman, pengembangan game 2D, serta arsitektur basis data.
+      </p>
+
+      <div class="flex justify-center gap-3">
+        <a href="#proyek" class="bg-white hover:bg-neutral-200 text-neutral-950 font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors">
+          Lihat Proyek
+        </a>
+        <a href="#kontak" class="border border-neutral-700 hover:bg-neutral-900 text-neutral-300 font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+
+    <!-- Tentang Saya -->
+    <div id="tentang" class="space-y-6">
+      <div class="border-b border-neutral-800 pb-3">
+        <h2 class="text-2xl font-bold text-white">Tentang Saya</h2>
+        <p class="text-sm text-neutral-400">Latar belakang pendidikan, minat, serta keahlian teknis.</p>
+      </div>
+
+      <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-6 text-sm leading-relaxed space-y-3">
+        <p class="text-neutral-300">
+          Halo! Saya <strong>Rasya Zia Nawfalry</strong>. Ketertarikan saya pada dunia teknologi berawal dari studi di SMK jurusan Teknik Komputer dan Jaringan (TKJ) dan lulus pada tahun 2024. Saat ini saya menempuh jenjang sarjana (S1) program studi Teknik Informatika di <strong>Universitas Paramadina</strong>.
+        </p>
+        <p class="text-neutral-400">
+          Bagi saya, pemrograman bukan hanya sekadar menulis sintaks kode, melainkan tentang bagaimana merancang logika dan struktur algoritma yang efisien untuk menyelesaikan permasalahan nyata &mdash; baik itu antarmuka web, perancangan database, maupun interaksi game 2D.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Data Pribadi -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5 space-y-3">
+          <h3 class="font-semibold text-white text-base">Data Pribadi</h3>
+          <ul class="space-y-2 text-sm">
+            <li class="flex justify-between p-2.5 rounded bg-neutral-950 border border-neutral-800/80">
+              <span class="text-neutral-400">Domisili</span>
+              <strong class="text-white">Bekasi, Jawa Barat</strong>
+            </li>
+            <li class="flex justify-between p-2.5 rounded bg-neutral-950 border border-neutral-800/80">
+              <span class="text-neutral-400">Pendidikan Terakhir</span>
+              <strong class="text-white">SMK TKJ (2024)</strong>
+            </li>
+            <li class="flex justify-between p-2.5 rounded bg-neutral-950 border border-neutral-800/80">
+              <span class="text-neutral-400">Pendidikan Saat Ini</span>
+              <strong class="text-white">S1 Teknik Informatika</strong>
+            </li>
+            <li class="flex justify-between p-2.5 rounded bg-neutral-950 border border-neutral-800/80">
+              <span class="text-neutral-400">Perguruan Tinggi</span>
+              <strong class="text-white">Universitas Paramadina</strong>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Keahlian -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5 space-y-3">
+          <h3 class="font-semibold text-white text-base">Keahlian &amp; Toolset</h3>
+          <p class="text-xs text-neutral-400">Teknologi dan bahasa pemrograman yang digunakan:</p>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">C++ (SFML)</span>
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">Python (Pygame)</span>
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">HTML5 &amp; CSS3</span>
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">JavaScript</span>
+            <span class="bg-neutral-800 text-white font-medium px-3 py-1.5 rounded border border-neutral-600">Tailwind CSS</span>
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">Unity (C#)</span>
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">MySQL &amp; MongoDB</span>
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">Jaringan Komputer (TKJ)</span>
+            <span class="bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded border border-neutral-700/60">Git &amp; GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyek & Pengalaman -->
+    <div id="proyek" class="space-y-8">
+      <div class="border-b border-neutral-800 pb-3">
+        <h2 class="text-2xl font-bold text-white">Proyek &amp; Pengalaman</h2>
+        <p class="text-sm text-neutral-400">Dokumentasi hasil karya proyek dan rekam jejak peran rekayasa yang pernah dikerjakan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Proyek 1 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden flex flex-col hover:border-neutral-700 transition-colors">
+          <div class="h-44 bg-black overflow-hidden border-b border-neutral-800">
+            <img src="foto-Web.jpeg" alt="Tampilan Dokumentasi Proyek Web" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Web Development</span>
+              <h3 class="font-bold text-white text-base mt-1 mb-2">Web Project Documentation</h3>
+              <p class="text-xs text-neutral-400 leading-relaxed">
+                Pengembangan antarmuka dashboard web yang menyajikan informasi layanan, aktivitas akun, dan promosi secara rapi dan responsif.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-neutral-800 text-xs text-neutral-400 flex justify-between items-center">
+              <span>HTML &bull; CSS &bull; JS</span>
+              <span class="text-neutral-300 font-medium">Selesai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyek 2 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden flex flex-col hover:border-neutral-700 transition-colors">
+          <div class="h-44 bg-black overflow-hidden border-b border-neutral-800">
+            <img src="foto-game.jpeg" alt="Tampilan Dokumentasi Proyek Game 2D" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Game Development</span>
+              <h3 class="font-bold text-white text-base mt-1 mb-2">Game 2D Development</h3>
+              <p class="text-xs text-neutral-400 leading-relaxed">
+                Perancangan gameplay 2D dengan aset karakter, mekanisme pertarungan turn-based, struktur interaksi objek, dan alur cerita dialog.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-neutral-800 text-xs text-neutral-400 flex justify-between items-center">
+              <span>Python &bull; Pygame</span>
+              <a href="https://github.com/rasyaziaven/game-action-platformer-py" target="_blank" rel="noopener noreferrer" class="text-white hover:text-neutral-300 font-medium underline underline-offset-2 flex items-center gap-1">
+                Repo GitHub &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyek 3 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden flex flex-col hover:border-neutral-700 transition-colors">
+          <div class="h-44 bg-neutral-950 overflow-hidden border-b border-neutral-800 flex items-center justify-center">
+            <img src="Logo-SV.jpeg" alt="Logo Snow Valley Agency" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Agency &bull; Platform</span>
+              <h3 class="font-bold text-white text-base mt-1 mb-2">Snow Valley Agency</h3>
+              <p class="text-xs text-neutral-400 leading-relaxed">
+                Pengembangan ekosistem agensi digital untuk manajemen talent, administrasi operasional, koordinasi komunitas, dan kehadiran web resmi.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-neutral-800 text-xs text-neutral-400 flex justify-between items-center">
+              <span>Operations &bull; Management</span>
+              <a href="https://www.snowvalleyagency.my.id/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-neutral-300 font-medium underline underline-offset-2 flex items-center gap-1">
+                Kunjungi Web &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabel Pengalaman -->
+      <div class="space-y-3 pt-4">
+        <h3 class="text-base font-bold text-white">Ringkasan Pengalaman &amp; Peran Rekayasa</h3>
+        
+        <div class="overflow-x-auto rounded-xl border border-neutral-800 bg-neutral-900">
+          <table class="w-full text-left text-xs min-w-[560px]">
+            <thead class="bg-neutral-950 border-b border-neutral-800 text-neutral-300 font-semibold uppercase tracking-wider text-[11px]">
+              <tr>
+                <th class="p-3.5 w-12 text-center">No</th>
+                <th class="p-3.5">Peran / Posisi</th>
+                <th class="p-3.5">Instansi / Proyek</th>
+                <th class="p-3.5">Keahlian &amp; Tool</th>
+                <th class="p-3.5">Tanggung Jawab</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-neutral-800 text-neutral-300">
+              <tr class="hover:bg-neutral-800/40">
+                <td class="p-3.5 text-center text-neutral-500 font-medium">1</td>
+                <td class="p-3.5 font-semibold text-white">Administrator</td>
+                <td class="p-3.5 text-neutral-400">Snow Valley Agency</td>
+                <td class="p-3.5 text-neutral-300">Data Management, Operations</td>
+                <td class="p-3.5 text-neutral-400">Mengelola administrasi operasional, koordinasi talent, dan alur komunikasi agensi.</td>
+              </tr>
+              <tr class="hover:bg-neutral-800/40">
+                <td class="p-3.5 text-center text-neutral-500 font-medium">2</td>
+                <td class="p-3.5 font-semibold text-white">Indie Game Dev</td>
+                <td class="p-3.5 text-neutral-400">Proyek Mandiri</td>
+                <td class="p-3.5 text-neutral-300">C++ (SFML), Python, Unity</td>
+                <td class="p-3.5 text-neutral-400">Merancang logika game, mekanik interaktif 2D, dan turn-based logic.</td>
+              </tr>
+              <tr class="hover:bg-neutral-800/40">
+                <td class="p-3.5 text-center text-neutral-500 font-medium">3</td>
+                <td class="p-3.5 font-semibold text-white">Database Developer</td>
+                <td class="p-3.5 text-neutral-400">Proyek Akademik</td>
+                <td class="p-3.5 text-neutral-300">MySQL, MongoDB, SQL</td>
+                <td class="p-3.5 text-neutral-400">Merancang skema database relasional, normalisasi tabel, serta query data.</td>
+              </tr>
+              <tr class="hover:bg-neutral-800/40">
+                <td class="p-3.5 text-center text-neutral-500 font-medium">4</td>
+                <td class="p-3.5 font-semibold text-white">Software Scripting</td>
+                <td class="p-3.5 text-neutral-400">Proyek Akademik</td>
+                <td class="p-3.5 text-neutral-300">C++, Python, OOP</td>
+                <td class="p-3.5 text-neutral-400">Eksperimen CLI script, manipulasi matriks numerik, dan struktur data.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontak -->
+    <div id="kontak" class="space-y-6">
+      <div class="border-b border-neutral-800 pb-3">
+        <h2 class="text-2xl font-bold text-white">Kontak</h2>
+        <p class="text-sm text-neutral-400">Silakan hubungi saya untuk keperluan proyek, diskusi akademis, atau kerja sama.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Informasi Kontak -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-6 space-y-4">
+          <h3 class="font-semibold text-white text-base">Kontak Langsung</h3>
+          <p class="text-xs text-neutral-400">Kanal komunikasi langsung yang aktif dan dapat dihubungi:</p>
+
+          <div class="space-y-3 text-sm">
+            <a href="https://wa.me/628112011848" target="_blank" class="flex items-center gap-3 p-3 rounded-lg bg-neutral-950 border border-neutral-800 hover:border-neutral-700 transition-colors">
+              <span class="w-8 h-8 rounded bg-neutral-800 text-neutral-200 font-bold text-xs flex items-center justify-center">WA</span>
+              <div>
+                <span class="text-neutral-400 text-xs block">WhatsApp</span>
+                <span class="text-white font-medium">+62 811-2011-848</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/rasyaziaven" target="_blank" class="flex items-center gap-3 p-3 rounded-lg bg-neutral-950 border border-neutral-800 hover:border-neutral-700 transition-colors">
+              <span class="w-8 h-8 rounded bg-neutral-800 text-neutral-200 font-bold text-xs flex items-center justify-center">GH</span>
+              <div>
+                <span class="text-neutral-400 text-xs block">GitHub</span>
+                <span class="text-white font-medium">github.com/rasyaziaven</span>
+              </div>
+            </a>
+
+            <a href="mailto:rasyazia06@gmail.com" class="flex items-center gap-3 p-3 rounded-lg bg-neutral-950 border border-neutral-800 hover:border-neutral-700 transition-colors">
+              <span class="w-8 h-8 rounded bg-neutral-800 text-neutral-200 font-bold text-xs flex items-center justify-center">@</span>
+              <div>
+                <span class="text-neutral-400 text-xs block">Email Pribadi</span>
+                <span class="text-white font-medium break-all">rasyazia06@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="mailto:rasyazia@student.paramadina.ac.id" class="flex items-center gap-3 p-3 rounded-lg bg-neutral-950 border border-neutral-800 hover:border-neutral-700 transition-colors">
+              <span class="w-8 h-8 rounded bg-neutral-800 text-neutral-200 font-bold text-xs flex items-center justify-center">UN</span>
+              <div>
+                <span class="text-neutral-400 text-xs block">Email Kampus</span>
+                <span class="text-white font-medium break-all">rasyazia@student.paramadina.ac.id</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Pesan -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+          <h3 class="font-semibold text-white text-base mb-1">Kirim Pesan</h3>
+          <p class="text-xs text-neutral-400 mb-4">Tinggalkan pesan Anda pada formulir di bawah ini.</p>
+
+          <form id="form-kontak" class="space-y-4">
+            <div>
+              <label for="nama" class="block text-xs font-semibold text-neutral-300 mb-1">Nama Lengkap</label>
+              <input 
+                type="text" 
+                id="nama" 
+                name="nama" 
+                required 
+                placeholder="Masukkan nama Anda..." 
+                class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-neutral-500 placeholder:text-neutral-600"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-xs font-semibold text-neutral-300 mb-1">Alamat Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="contoh@email.com" 
+                class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-neutral-500 placeholder:text-neutral-600"
+              />
+            </div>
+
+            <div>
+              <label for="pesan" class="block text-xs font-semibold text-neutral-300 mb-1">Pesan</label>
+              <textarea 
+                id="pesan" 
+                name="pesan" 
+                rows="4" 
+                required 
+                placeholder="Tuliskan pesan Anda..." 
+                class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-neutral-500 placeholder:text-neutral-600"
+              ></textarea>
+            </div>
+
+            <div class="flex items-center gap-3 pt-1">
+              <button 
+                type="submit" 
+                class="bg-white hover:bg-neutral-200 text-neutral-950 font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors cursor-pointer"
+              >
+                Kirim Pesan
+              </button>
+              <button 
+                type="reset" 
+                class="border border-neutral-800 hover:bg-neutral-800 text-neutral-400 text-sm px-4 py-2.5 rounded-lg transition-colors cursor-pointer"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 border-t border-neutral-800 py-6 text-center text-xs text-neutral-500">
+    <div class="max-w-4xl mx-auto px-4 space-y-1">
+      <p>&copy; 2026 <strong>Rasya Zia Nawfalry</strong> &bull; S1 Teknik Informatika, Universitas Paramadina</p>
+      <p>Portofolio Pribadi Pemrograman Web &bull; Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    menuBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    const formKontak = document.getElementById('form-kontak');
+    formKontak.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value.trim();
+      alert(`Terima kasih, ${nama}! Pesan Anda telah terkirim.`);
+      formKontak.reset();
+    });
+  </script>
+
+</body>
+</html>
